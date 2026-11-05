@@ -7,6 +7,14 @@ const nextConfig: NextConfig = {
       fullUrl: true
     }
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "cdn.sanity.io",
+      },
+    ],
+  },
 /*  cacheComponents: true,
   partialPrefetching: true,*/
   reactCompiler: true,
